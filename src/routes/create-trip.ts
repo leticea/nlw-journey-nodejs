@@ -53,6 +53,9 @@ export async function createTrip(app: FastifyInstance) {
                   is_owner: true,
                   is_confirmed: true,
                 },
+                ...emails_to_invite.map((email) => {
+                  return { email };
+                }),
               ],
             },
           },

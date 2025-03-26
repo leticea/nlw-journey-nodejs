@@ -68,6 +68,8 @@ export async function createTrip(app: FastifyInstance) {
       const formattedStartDate = dayjs(starts_at).format("LL");
       const formattedEndDate = dayjs(ends_at).format("LL");
 
+      const confirmationLink = `http://localhost:3333/trips/${trip.id}/confirm`;
+
       const mail = await getMailClient();
 
       const message = await mail.sendMail({
@@ -90,7 +92,7 @@ export async function createTrip(app: FastifyInstance) {
             <p>To confirm your trip, click on the link below:</p>
             <p></p>
             <p>
-              <a href="">Confirm Trip</a>
+              <a href="${confirmationLink}">Confirm Trip</a>
             </p>
             <p></p>
             <p>If you do not know what this email is about, just ignore it.</p>

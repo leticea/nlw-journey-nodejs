@@ -24,7 +24,7 @@ This project was developed with the following technologies:
 
 NLW event on the [Rocketseat](https://www.rocketseat.com.br/) platform.
 
-<h4 align="center">
+<h4>
 	🚧  Under construction...  🚧
 </h4>
 

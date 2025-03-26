@@ -24,6 +24,10 @@ This project was developed with the following technologies:
 
 NLW event on the [Rocketseat](https://www.rocketseat.com.br/) platform.
 
+<h4 align="center">
+	🚧  Under construction...  🚧
+</h4>
+
 - [Front-end - Web](https://github.com/leticea/nlw-journey-react)
 
 <p align="center">

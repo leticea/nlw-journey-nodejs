@@ -1,10 +1,13 @@
 import type { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
 import dayjs from "dayjs";
+import localizedFormat from "dayjs/plugin/localizedFormat";
 import nodemailer from "nodemailer";
 import { z } from "zod";
 import { prisma } from "../lib/prisma";
 import { getMailClient } from "../lib/mail";
+
+dayjs.extend(localizedFormat);
 
 export async function createTrip(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().post(
@@ -62,6 +65,9 @@ export async function createTrip(app: FastifyInstance) {
         },
       });
 
+      const formattedStartDate = dayjs(starts_at).format("LL");
+      const formattedEndDate = dayjs(ends_at).format("LL");
+
       const mail = await getMailClient();
 
       const message = await mail.sendMail({
@@ -73,8 +79,24 @@ export async function createTrip(app: FastifyInstance) {
           name: owner_name,
           address: owner_email,
         },
-        subject: "Testing email sending",
-        html: `<p>Test</p>`,
+        subject: `Confirm your trip to ${destination} on ${formattedStartDate}`,
+        html: `
+          <div style="font-family: sans-serif; font-size: 16px; line-height: 1.6">
+            <p>
+              You have requested to create a trip to <strong>${destination}</strong> for
+              the dates of <strong>${formattedStartDate}</strong> to <strong>${formattedEndDate}</strong>
+            </p>
+            <p></p>
+            <p>To confirm your trip, click on the link below:</p>
+            <p></p>
+            <p>
+              <a href="">Confirm Trip</a>
+            </p>
+            <p></p>
+            <p>If you do not know what this email is about, just ignore it.</p>
+          </div>
+
+        `.trim(),
       });
 
       console.log(nodemailer.getTestMessageUrl(message));

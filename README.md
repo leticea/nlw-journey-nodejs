@@ -160,14 +160,14 @@ Returns:
 
 ```
 {
-  "links":  [
-	  {
-        "id": "251f8048-4287-45b0-b258-a320de4352df",
-        "title": "AirBnB Booking",
-        "url": "https://airbnb.com/booking-journey",
-        "trip_id": "9626e02a-9458-4c82-b854-9918d2c366c2"
-	  }
-	]
+  "links": [
+	{
+	  "id": "251f8048-4287-45b0-b258-a320de4352df",
+	  "title": "AirBnB Booking",
+	  "url": "https://airbnb.com/booking-journey",
+	  "trip_id": "9626e02a-9458-4c82-b854-9918d2c366c2"
+	}
+  ]
 }
 ```
 

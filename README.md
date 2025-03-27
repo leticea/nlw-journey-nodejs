@@ -54,15 +54,15 @@ Send:
 
 ```
 {
-	"destination": "Salvador",
-	"starts_at": "2025-04-15 18:00:00",
-	"ends_at": "2025-04-29 18:00:00",
-	"owner_name": "Letícia Mangueira",
-	"owner_email": "leticia.mangueira@acme.com",
-	"emails_to_invite": [
-		"diego@rocketseat.com",
-		"johndoe@acme.com"
-	]
+  "destination": "Salvador",
+  "starts_at": "2025-04-15 18:00:00",
+  "ends_at": "2025-04-29 18:00:00",
+  "owner_name": "Letícia Mangueira",
+  "owner_email": "leticia.mangueira@acme.com",
+  "emails_to_invite": [
+    "diego@rocketseat.com",
+    "johndoe@acme.com"
+  ]
 }
 ```
 
@@ -70,7 +70,7 @@ Returns:
 
 ```
 {
-	"tripId": "9626e02a-9458-4c82-b854-9918d2c366c2"
+  "tripId": "9626e02a-9458-4c82-b854-9918d2c366c2"
 }
 ```
 
@@ -86,8 +86,8 @@ Send:
 
 ```
 {
-	"title": "Lunch",
-	"occurs_at": "2025-04-18 09:00:00",
+  "title": "Lunch",
+  "occurs_at": "2025-04-18 09:00:00",
 }
 ```
 
@@ -95,7 +95,7 @@ Returns:
 
 ```
 {
-	"activityId": "432ef451-db66-417f-82dd-306fb67423b8"
+  "activityId": "432ef451-db66-417f-82dd-306fb67423b8"
 }
 ```
 
@@ -105,30 +105,30 @@ Returns:
 
 ```
 {
-	"activities": [
-		{
-			"date": "2025-04-15T21:00:00.000Z",
-			"activities": []
-		},
-		{
-			"date": "2025-04-16T21:00:00.000Z",
-			"activities": []
-		},
-		{
-			"date": "2025-04-17T21:00:00.000Z",
-			"activities": []
-		},
-		{
-			"date": "2025-04-18T21:00:00.000Z",
-			"activities": [
-				{
-					"id": "432ef451-db66-417f-82dd-306fb67423b8",
-					"title": "Lunch",
-					"occurs_at": "2025-04-18T12:00:00.000Z",
-					"trip_id": "9626e02a-9458-4c82-b854-9918d2c366c2"
-				}
-			]
-		},
+  "activities": [
+    {
+      "date": "2025-04-15T21:00:00.000Z",
+      "activities": []
+    },
+    {
+      "date": "2025-04-16T21:00:00.000Z",
+      "activities": []
+    },
+    {
+      "date": "2025-04-17T21:00:00.000Z",
+      "activities": []
+    },
+    {
+      "date": "2025-04-18T21:00:00.000Z",
+      "activities": [
+        {
+          "id": "432ef451-db66-417f-82dd-306fb67423b8",
+          "title": "Lunch",
+          "occurs_at": "2025-04-18T12:00:00.000Z",
+          "trip_id": "9626e02a-9458-4c82-b854-9918d2c366c2"
+        }
+      ]
+    },
   ]
 }
 ```
@@ -141,8 +141,8 @@ Send:
 
 ```
 {
-	"title": "AirBnB Booking",
-	"url": "https://airbnb.com/booking-journey"
+  "title": "AirBnB Booking",
+  "url": "https://airbnb.com/booking-journey"
 }
 ```
 
@@ -150,7 +150,7 @@ Returns:
 
 ```
 {
-	"linkId": "251f8048-4287-45b0-b258-a320de4352df"
+  "linkId": "251f8048-4287-45b0-b258-a320de4352df"
 }
 ```
 
@@ -160,13 +160,13 @@ Returns:
 
 ```
 {
-	"links": [
-		{
-			"id": "251f8048-4287-45b0-b258-a320de4352df",
-			"title": "AirBnB Booking",
-			"url": "https://airbnb.com/booking-journey",
-			"trip_id": "9626e02a-9458-4c82-b854-9918d2c366c2"
-		}
+  "links":  [
+	  {
+        "id": "251f8048-4287-45b0-b258-a320de4352df",
+        "title": "AirBnB Booking",
+        "url": "https://airbnb.com/booking-journey",
+        "trip_id": "9626e02a-9458-4c82-b854-9918d2c366c2"
+	  }
 	]
 }
 ```

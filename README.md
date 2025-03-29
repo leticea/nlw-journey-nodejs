@@ -202,6 +202,24 @@ Returns:
 }
 ```
 
+- **`POST http://localhost:3333/trips/:tripId/invites`**: <b>Create invite</b>
+
+Send:
+
+```
+{
+  "email": "johndoe@acme.com"
+}
+```
+
+Returns:
+
+```
+{
+  "participantId": "2eb53d8c-8cd8-49bb-9183-6a012d14dcf5"
+}
+```
+
 ## 🤔 How to contribute
 
 - Fork this repository;

@@ -48,7 +48,7 @@ NLW event on the [Rocketseat](https://www.rocketseat.com.br/) platform.
 
 ## 👩🏿‍💻 Trips Routes
 
-- **`POST http://localhost:3333/trips`**: Create trip
+- **`POST http://localhost:3333/trips`**: <b>Create trip</b>
 
 Send:
 

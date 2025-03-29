@@ -78,6 +78,26 @@ Returns:
 
 - **`GET http://localhost:3333/participants/:participantId/confirm`**: <b>Confirm participant</b>
 
+- **`PUT http://localhost:3333/trips/:tripId`**: <b>Update trip</b>
+
+Send:
+
+```
+{
+  "destination": "Salvador - BA",
+  "starts_at": "2025-04-15 18:00:00",
+  "ends_at": "2025-04-29 18:00:00",
+}
+```
+
+Returns:
+
+```
+{
+  "tripId": "9626e02a-9458-4c82-b854-9918d2c366c2"
+}
+```
+
 ## 👩🏿‍💻 Activities Routes
 
 - **`POST http://localhost:3333/trips/:tripId/activities`**: <b>Create activity</b>

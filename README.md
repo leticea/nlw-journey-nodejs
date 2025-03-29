@@ -171,6 +171,37 @@ Returns:
 }
 ```
 
+## 👩🏿‍💻 Participants Routes
+
+- **`GET http://localhost:3333/trips/:tripId/participants`**: <b>Get participants</b>
+
+Returns:
+
+```
+{
+  "participants": [
+    {
+      "id": "c6e5445d-13ec-47fb-9f82-c4d64447ee45",
+      "name": "Letícia Mangueira",
+      "email": "leticia.mangueira@acme.com",
+      "is_confirmed": true
+    },
+    {
+      "id": "ffa5fd91-1f6f-4b7b-b252-6802c12d080c",
+      "name": null,
+      "email": "diego@rocketseat.com",
+      "is_confirmed": false
+    },
+    {
+      "id": "bb64ae65-6dbf-4b25-8e41-493ba6f687bb",
+      "name": null,
+      "email": "johndoe@acme.com",
+      "is_confirmed": false
+    }
+  ]
+}
+```
+
 ## 🤔 How to contribute
 
 - Fork this repository;

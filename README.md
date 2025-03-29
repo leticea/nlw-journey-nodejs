@@ -256,6 +256,21 @@ Returns:
 }
 ```
 
+- **`GET http://localhost:3333/participants/:participantId`**: <b>Get participant</b>
+
+Returns:
+
+```
+{
+  "participant": {
+    "id": "c6e5445d-13ec-47fb-9f82-c4d64447ee45",
+    "name": "Letícia Mangueira",
+    "email": "leticia.mangueira@acme.com",
+    "is_confirmed": true
+  }
+}
+```
+
 ## 🤔 How to contribute
 
 - Fork this repository;

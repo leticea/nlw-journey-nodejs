@@ -98,6 +98,22 @@ Returns:
 }
 ```
 
+- **`GET http://localhost:3333/trips/:tripId`**: <b>Get trip details</b>
+
+Returns:
+
+```
+{
+  "trip": {
+    "id": "9626e02a-9458-4c82-b854-9918d2c366c2",
+    "destination": "Salvador - BA",
+    "starts_at": "2025-04-15T21:00:00.000Z",
+    "ends_at": "2025-04-29T21:00:00.000Z",
+    "is_confirmed": true
+  }
+}
+```
+
 ## 👩🏿‍💻 Activities Routes
 
 - **`POST http://localhost:3333/trips/:tripId/activities`**: <b>Create activity</b>

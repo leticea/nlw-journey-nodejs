@@ -19,15 +19,16 @@ This project was developed with the following technologies:
 - [Prisma](https://www.prisma.io/docs) - ^6.5.0
 - [Fastify](https://www.fastify.io/) - ^5.2.1
 - [Zod](https://zod.dev/) - ^3.24.2
+- [Day.js](https://day.js.org/) - ^1.11.13
 - [Nodemailer](https://www.nodemailer.com/) - ^6.10.0
 
 ## 💻 Project
 
-NLW event on the [Rocketseat](https://www.rocketseat.com.br/) platform.
+plann.er is an application for travel planning and management.
 
-<h4>
-	🚧  Under construction...  🚧
-</h4>
+The tool allows the organizer to register the trip, invite all the people who will be part of the trip, and also send a trip confirmation by email, details of the trip, the activities that will take place on each day and time, the list of guests and the list of links.
+
+NLW event on the [Rocketseat](https://www.rocketseat.com.br/) platform.
 
 - [Front-end - Web](https://github.com/leticea/nlw-journey-react)
 
@@ -43,6 +44,11 @@ NLW event on the [Rocketseat](https://www.rocketseat.com.br/) platform.
 
 - Clone the project.
 - Go to the project folder and run 'npm install' (use 'yarn install' if that's your configuration).
+- create a ".env" file with the following information:
+  (DATABASE_URL="file:./dev.db"
+  API_BASE_URL="http://localhost:3333"
+  WEB_BASE_URL="http://localhost:3000"
+  PORT="3333")
 - npm run dev to run the project on the indicated port.
 - npx prisma studio (to view the database).
 

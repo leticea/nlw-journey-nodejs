@@ -4,6 +4,8 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from "fastify-type-provider-zod";
+import { env } from "./env";
+import { errorHandler } from "./error-handler";
 import { confirmParticipants } from "./routes/confirm-participant";
 import { confirmTrip } from "./routes/confirm-trip";
 import { createActivity } from "./routes/create-activity";
@@ -16,8 +18,6 @@ import { getParticipant } from "./routes/get-participant";
 import { getParticipants } from "./routes/get-participants";
 import { getTripDetails } from "./routes/get-trip-details";
 import { updateTrip } from "./routes/update-trip";
-import { errorHandler } from "./error-handler";
-import { env } from "./env";
 
 const app = fastify();
 

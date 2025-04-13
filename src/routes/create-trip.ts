@@ -13,9 +13,7 @@ export async function createTrip(app: FastifyInstance) {
     {
       schema: {
         body: z.object({
-          destination: z
-            .string({ required_error: "Destination is required." })
-            .min(4),
+          destination: z.string().min(4),
           starts_at: z.coerce.date(),
           ends_at: z.coerce.date(),
           owner_name: z.string(),

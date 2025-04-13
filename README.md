@@ -32,14 +32,6 @@ NLW event on the [Rocketseat](https://www.rocketseat.com.br/) platform.
 
 - [Front-end - Web](https://github.com/leticea/nlw-journey-react)
 
-<p align="center">
-  <img alt="" src=".github/image.png">
-</p>
-
-<p align="center">
-  <img alt="" src=".github/image2.png">
-</p>
-
 ## ⚙️ How to run
 
 - Clone the project.
